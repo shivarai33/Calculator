@@ -1,0 +1,79 @@
+body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+    }
+    
+    #calculator {
+        font-family: Arial, sans-serif;
+        background-color: rgb(179, 163, 183);
+        border-radius: 15px;
+        overflow: hidden;
+        border: 10px solid black;
+    }
+    
+    #display {
+   
+        padding: 20px;
+        font-size: 2.5rem; /* Adjusted for better responsiveness */
+        text-align: right; /* Changed to right-align for better UX */
+        border: none;
+        background-color: rgb(181, 133, 201);
+        color: rgb(20, 19, 19);
+ 
+    }
+    
+    #keys {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 25px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 20px 0;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(108, 105, 106);
+        color: rgb(18, 16, 22);
+        font-size: 1.5rem; /* Adjusted for better responsiveness */
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    button:hover {
+        background-color: rgb(90, 186, 154);
+    }
+    
+    button:active {
+        background-color: rgb(209, 226, 100);
+    }
+    
+    .operator-btn {
+        background-color: rgb(171, 108, 205);
+    }
+    
+    .operator-btn:hover {
+        background-color: rgb(246, 194, 97);
+    }
+    
+    .operator-btn:active {
+        background-color: rgb(234, 167, 234);
+    }
+    
+    /* Media query for smaller screens */
+    @media (max-width: 600px) {
+        #display {
+            font-size: 2rem;
+        }
+    
+        button {
+            font-size: 1rem;
+        }
+    }
+    
